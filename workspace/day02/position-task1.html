@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position 실습</title>
+    <style>
+        div.back {
+            background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgc6aulXwL3PG5BOurXyGOne-itDOx6d5i2w&usqp=CAU");
+            background-size: 100%;
+            background-position: center;
+            width: 414px;
+            height: 122px;
+            margin: 0 auto;
+        }
+
+        div.img {
+            position: absolute;
+            background-image: url("http://koreaitacademy.com/renewal2021/img/tch/teacher007.png");
+            background-size: 100%;
+            background-position: center;
+            width: 220px;
+            height: 315px;
+            margin: 0 auto;
+        }
+        
+        div.sunglass {
+            position: absolute;
+            background-image: url("img/sunglass.png");
+            background-size: 100%;
+            background-position: center;
+            width: 360px;
+            height: 203px;
+            margin: 0 auto;
+        }
+        
+        div.cigar {
+            position: absolute;
+            background-image: url("img/cigar.png");
+            background-size: 100%;
+            background-position: center;
+            width: 704px;
+            height: 720px;
+            margin: 0 auto;
+        }
+        
+        div.crown {
+            position: absolute;
+            background-image: url("img/crown.png");
+            background-size: 100%;
+            background-position: center;
+            width: 174px;
+            height: 130px;
+            margin: 0 auto;
+        }
+
+        div.car {
+            background-image: url("img/ferrari-458-transport.png");
+            background-size: 100%;
+            background-position: center;
+            width: 920px;
+            height: 270px;
+            margin: 0 auto;
+        }
+
+        div.sunglass img {
+            width: 100px;
+        }
+
+        div.cigar img {
+            width: 50px;
+        }
+
+        div.crown img {
+            width: 100px;
+        }
+
+        div.car img {
+            width: 100px;
+            transform: rotate(80deg);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container" style="position: relative;">
+        <div class="img">
+            <div class="sunglass">
+            </div>
+            <div class="cigar">
+            </div>
+            <div class="crown">
+            </div>
+            <div class="car">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

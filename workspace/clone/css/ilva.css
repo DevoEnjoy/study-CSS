@@ -1,0 +1,138 @@
+input {
+    writing-mode: horizontal-tb !important;
+    /* font-style: ;
+    font-variant-ligatures: ;
+    font-variant-caps: ;
+    font-variant-numeric: ;
+    font-variant-east-asian: ;
+    font-weight: ;
+    font-stretch: ;
+    font-size: ;
+    font-family: ; */
+    text-rendering: auto;
+    /* color: fieldtext; */
+    letter-spacing: normal;
+    word-spacing: normal;
+    /* line-height: normal; */
+    text-transform: none;
+    /* text-indent: 0px; */
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    appearance: auto;
+    -webkit-rtl-ordering: logical;
+    cursor: text;
+    /* background-color: field;
+    margin: 0em;
+    padding: 1px 2px;
+    border-width: 2px;
+    border-style: inset;
+    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+    border-image: initial; */
+}
+
+.contents {
+    width: 1192px;
+    height: 440px;
+}
+
+body, code {
+    font: 13px;
+}
+
+body div.wrap {
+    width: 100%;
+}
+
+.header-wrap {
+    padding: 0 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 113px;
+    border-bottom: 1px solid transparent;
+}
+
+.header-left {
+    position: fixed;
+    top: 0;
+    left: 50px;
+    height: 113px;
+    z-index: 100;
+}
+
+.header-right {
+    left: auto;
+    right: 50px;
+}
+
+.header-left {
+    position: absolute;
+    left: 50px;
+    top: 53px;
+    width: 280px;
+}
+
+.header-relative {
+    width: 100%;
+    height: 193px;
+}
+
+#header-left li {
+    padding: 0;
+    width: 113px !important;
+    font-size: 13px;
+}
+
+.member-login {
+    max-width: 375px;
+    height: 440px;
+    margin: 0 auto;
+
+}
+
+div.column {
+    text-align: center;
+    padding: auto;
+    margin: auto;
+    border: 1px solid;
+}
+
+label {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+input {
+    width: 100%;
+    line-height: 20px;
+    height: 22px;
+    padding: 24 0;
+}
+
+input[type=text], input[type=password] {
+    height: 22px;
+    line-height: 20px;
+}
+
+.member--login label input {
+    width: 100%;
+    border: none;
+    border: 1px solid var(--sub-color-third);
+    padding: 24px 0 !important;
+    box-sizing: border-box;
+    color: var(--main-color);
+    text-indent: 15px;
+    transition: border-color 0.3s;
+}
+
+.ePlaceholder {
+    display: block;
+    min-height: 50px;
+}
+
+.ePlaceholder input {
+    min-height: 50px;
+}
