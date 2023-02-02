@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position 실습</title>
+    <style>
+        div.back {
+            background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgc6aulXwL3PG5BOurXyGOne-itDOx6d5i2w&usqp=CAU");
+            background-size: 100%;
+            background-position: center;
+            width: 414px;
+            height: 122px;
+            margin: 0 auto;
+        }
+
+        div.img {
+            background-image: url("http://koreaitacademy.com/renewal2021/img/tch/teacher007.png");
+            background-size: 100%;
+            background-position: center;
+            width: 220px;
+            height: 315px;
+            margin: 0 auto;
+        }
+
+        div.sunglass {
+            z-index: 100;
+            top: 21%;
+            left: 16%;
+            position: relative;
+        }
+
+        div.cigar {
+            position: relative;
+            z-index: 100;
+            top: 22%;
+            left: 15%;
+        }
+
+        div.crown {
+            position: relative;
+            z-index: 0;
+            top: -40%;
+            left: 20%;
+            background-color: rgba(255, 255, 255, 0.0);
+        }
+
+        div.car {
+            position: relative;
+            left: 10%;
+        }
+
+        div.sunglass img {
+            width: 100px;
+        }
+
+        div.cigar img {
+            width: 50px;
+        }
+
+        div.crown img {
+            width: 100px;
+        }
+
+        div.car img {
+            width: 100px;
+            transform: rotate(80deg);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container" style="position: relative;">
+        <div class="img">
+            <div class="sunglass">
+                <img src="img/sunglass.png" alt="">
+            </div>
+            <div class="cigar">
+                <img src="img/cigar.png" alt="">
+            </div>
+            <div class="crown">
+                <img src="img/images.jpg" alt="">
+            </div>
+            <div class="car">
+                <img src="img/ferrari-458-transport.png" alt="">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
