@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,300,400,500,700,900&amp;subset=korean"
+        rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../../src/css/bulma.css">
+    <link rel="stylesheet" href="../../src/css/normalize3.0kor.css">
+    <link rel="stylesheet" href="../../src/css/normalize8.0.1.css">
+    <link rel="stylesheet" href="../../src/css/layout.css">
+    <link rel="stylesheet" href="../../src/css/checkbox.css">
+    <link rel="stylesheet" href="../../src/css/common.css">
+    <link rel="stylesheet" href="../../src/font/font.css">
+    <link rel="stylesheet" href="../../src/css/siginin.css">
+    <link rel="stylesheet" href="../../src/font/NotoSansKR-Regular.otf">
+    <link rel="stylesheet" href="../../src/font/NotoSansKR-Light.otf">
+    <title>불스원몰</title>
+</head>
+
+<body style="font-family: 'NotoSansKR-Regular';">
+    <div class="wrapper">
+        <header>
+            <section class="bulls_gnb">
+                <h1 class="logo">
+                    <a href="/" title="불스원몰">
+                        <img src="https://www.bullsonemall.com/assets/front/images/common/logo.png" alt="불스원몰">
+                    </a>
+                    <div class="ani_wrap">
+                        <div class="kr">
+                            <span class="txt_0" style="animation-delay: 0.2s;">불스원</span>
+                            <span class="txt_1" style="animation-delay: 0.290909s;">온라인</span>
+                            <span class="txt_2" style="animation-delay: 0.381818s;">쇼핑몰</span>
+                        </div>
+                    </div>
+                </h1>
+            </section>
+        </header>
+        <div>
+            <main class="sub register" style="padding: 50px 0 100px;">
+                <!-- 회원가입 -->
+                <section class="account_layout" id="joinBox">
+                    <header class="sub_header">
+                        <h2 class="title_sub" id="signin-title-sub">
+                            회원가입
+                            <p>불스원몰 로그인을 하시면 다양한 혜택을 누리실 수 있습니다.</p>
+                        </h2>
+                    </header>
+                    <form name="reg2form" id="reg2form" method="post" role="form" class="form-horizontal"
+                        novalidate="novalidate">
+                        <h5 class="box_title">
+                            필수정보
+                            <span class="text-red float-right">* 표시는 필수입력사항입니다.</span>
+                        </h5>
+                        <div class="account_content">
+                            <ul class="form_write">
+                                <li class="inputted">
+                                    <span>아이디(이메일)
+                                        <strong class="text-red">*</strong>
+                                    </span>
+                                    <label for="" class="input_wrap">
+                                        <input id="checkEmail" name="email" type="email" placeholder="아이디를 입력해주세요"
+                                            class="type_text">
+                                    </label>
+                                </li>
+                                <li> <span>비밀번호
+                                        <strong class="text-red">*</strong>
+                                    </span>
+                                    <label for="" class="input_wrap">
+                                        <input id="checkPw" name="password" type="password"
+                                            placeholder="영문과 숫자 또는 특수문자 포함 8자 이상 입력해주세요." class="type_text">
+                                    </label>
+                                </li>
+                                <li>
+                                    <span>비밀번호 확인
+                                        <strong class="text-red">*</strong>
+                                    </span>
+                                    <label for="" class="input_wrap">
+                                        <input id="checkPwConfirm" name="passwordConfirm" type="password"
+                                            placeholder="비밀번호를 다시 입력해주세요." class="type_text">
+                                    </label>
+                                </li>
+                                <li>
+                                    <a href="" class="btn_mbr_certify btn bg-primary text-white full-width">회원인증하기</a>
+                                </li>
+                                <li class="readonly">
+                                    <span class="control-label">이름<strong class="text-red">*</strong></span>
+                                    <label for="checkName" class="input_wrap">
+                                        <input type="text" placeholder="회원인증하기 버튼을 눌러 주세요."
+                                            class="type_text max_w {validate:{required:true}}" id="checkName"
+                                            name="fname" value="" readonly="">
+                                        <em class="chk">
+                                            <svg width="13.508" height="12.1" viewBox="0 0 13.508 12.1">
+                                                <path d="M-7724.685-21453.953l4.993,4.746,7.007-10"
+                                                    transform="translate(7725.374 21459.781)" fill="none"
+                                                    stroke-width="2"></path>
+                                            </svg>
+                                        </em>
+                                    </label>
+                                </li>
+                                <li class="phone readonly">
+                                    <span class="control-label">휴대폰 번호<strong class="text-red">*</strong></span>
+                                    <label for="checkPhone" class="input_wrap">
+                                        <input type="number" placeholder="회원인증하기 버튼을 눌러 주세요."
+                                            class="max_w {validate:{required:true}}" id="checkPhone" name="cellphone"
+                                            maxlength="11" value="" readonly="">
+                                    </label>
+                                </li>
+                                <div class="account_content">
+                                    <ul class="form_write">
+                                        <li class="inputted has_error">
+                                            <span>아이디(이메일)<strong class="text-red">*</strong></span>
+                                            <label for="checkEmail" class="input_wrap">
+                                                <input type="email" title="" placeholder="아이디를 입력해주세요"
+                                                    class="type_text max_w {validate:{required:true, email:true}}"
+                                                    id="checkEmail" name="email" value=""
+                                                    data-gtm-form-interact-field-id="0">
+                                                <em class="chk chk_red">
+                                                    <svg width="13.508" height="12.1" viewBox="0 0 13.508 12.1">
+                                                        <path d="M-7724.685-21453.953l4.993,4.746,7.007-10"
+                                                            transform="translate(7725.374 21459.781)" fill="none"
+                                                            stroke-width="2"></path>
+                                                    </svg>
+                                                </em>
+                                            </label>
+                                            <p for="checkEmail" generated="true" class="text-red txt_alert"
+                                                style="display: block;">이메일 주소를 입력해주세요.</p>
+                                        </li>
+                                        <li>
+                                            <span class="control-label">비밀번호<strong class="text-red">*</strong></span>
+                                            <label for="checkPw" class="input_wrap">
+                                                <input type="password" placeholder="영문과 숫자 또는 특수문자 포함 8자 이상 입력해주세요."
+                                                    class="type_text max_w {validate:{required:true, minlength: 8}}"
+                                                    id="checkPw" name="password">
+                                                <em class="chk">
+                                                    <svg width="13.508" height="12.1" viewBox="0 0 13.508 12.1">
+                                                        <path d="M-7724.685-21453.953l4.993,4.746,7.007-10"
+                                                            transform="translate(7725.374 21459.781)" fill="none"
+                                                            stroke-width="2"></path>
+                                                    </svg>
+                                                </em>
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <span class="control-label">비밀번호 확인<strong
+                                                    class="text-red">*</strong></span>
+                                            <label for="checkPwConfirm" class="input_wrap">
+                                                <input type="password" placeholder="비밀번호를 다시 입력해주세요."
+                                                    class="type_text max_w {validate:{required:true}}"
+                                                    id="checkPwConfirm" name="passwordConfirm">
+                                                <em class="chk">
+                                                    <svg width="13.508" height="12.1" viewBox="0 0 13.508 12.1">
+                                                        <path d="M-7724.685-21453.953l4.993,4.746,7.007-10"
+                                                            transform="translate(7725.374 21459.781)" fill="none"
+                                                            stroke-width="2"></path>
+                                                    </svg>
+                                                </em>
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:;"
+                                                class="btn_mbr_certify btn bg-primary text-white full-width"
+                                                id="btnSendConfirmSMS">회원인증하기</a>
+                                        </li>
+                                        <li class="readonly">
+                                            <span class="control-label">이름<strong class="text-red">*</strong></span>
+                                            <label for="checkName" class="input_wrap">
+                                                <input type="text" placeholder="회원인증하기 버튼을 눌러 주세요."
+                                                    class="type_text max_w {validate:{required:true}}" id="checkName"
+                                                    name="fname" value="" readonly="">
+                                                <em class="chk">
+                                                    <svg width="13.508" height="12.1" viewBox="0 0 13.508 12.1">
+                                                        <path d="M-7724.685-21453.953l4.993,4.746,7.007-10"
+                                                            transform="translate(7725.374 21459.781)" fill="none"
+                                                            stroke-width="2"></path>
+                                                    </svg>
+                                                </em>
+                                            </label>
+                                        </li>
+                                        <li class="phone readonly">
+                                            <span class="control-label">휴대폰 번호<strong class="text-red">*</strong></span>
+                                            <label for="checkPhone" class="input_wrap">
+                                                <input type="number" placeholder="회원인증하기 버튼을 눌러 주세요."
+                                                    class="max_w {validate:{required:true}}" id="checkPhone"
+                                                    name="cellphone" maxlength="11" value="" readonly="">
+                                            </label>
+                                        </li>
+                                        <li class="gender">
+                                            <span class="control-label">성별</span>
+                                            <div class="gender_inner">
+                                                <label for="male" class="radio_wrap">
+                                                    <input type="radio" name="gender" id="male" value="male" checked="">
+                                                    <span>남성</span>
+                                                </label>
+                                                <label for="female" class="radio_wrap">
+                                                    <input type="radio" name="gender" id="female" value="female">
+                                                    <span>여성</span>
+                                                </label>
+                                            </div>
+                                        </li>
+                                        <li class="age">
+                                            <span class="control-label">연령대</span>
+                                            <div class="age_inner">
+                                                <label class="select-wrap" for="ui-id-1-button">
+                                                    <select name="age" id="ui-id-1" style="display: none;">
+                                                        <option value="0">연령대를 선택해주세요.</option>
+                                                        <option value="10">10</option>
+                                                        <option value="20">20</option>
+                                                        <option value="30">30</option>
+                                                        <option value="40">40</option>
+                                                        <option value="50">50</option>
+                                                        <option value="60">60</option>
+                                                        <option value="70">70</option>
+                                                        <option value="80">80</option>
+                                                        <option value="90">90</option>
+                                                    </select>
+                                                    <span tabindex="0" id="ui-id-1-button" role="combobox"
+                                                        aria-expanded="false" aria-autocomplete="list"
+                                                        aria-owns="ui-id-1-menu" aria-haspopup="true"
+                                                        class="ui-selectmenu-button ui-selectmenu-button-closed ui-corner-all ui-button ui-widget">
+                                                        <span
+                                                            class="ui-selectmenu-icon ui-icon ui-icon-triangle-1-s"></span>
+                                                        <span class="ui-selectmenu-text">연령대를 선택해주세요.</span>
+                                                    </span>
+                                                </label>
+                                            </div>
+                                        </li>
+
+                                        <li class="interest_cate">
+                                            <span class="control-label">관심 카테고리<em>(최대 3개까지 선택 가능)</em></span>
+                                            <ul class="cate_list">
+                                                <li data-item="60000001" class="">엔진오일, 첨가제, 케미컬</li>
+                                                <li data-item="60000299" class="">Homecare 살림공방</li>
+                                                <li data-item="60000002" class="">실내용품</li>
+                                                <li data-item="60000003" class="">실외용품, 와이퍼, 스티커</li>
+                                                <li data-item="60000004" class="">세차용품</li>
+                                                <li data-item="60000005" class="">공기청정, 방향제, 필터</li>
+                                                <li data-item="60000294" class="">소독, 방역제</li>
+                                                <li data-item="60000006" class="">안전, 편의용품</li>
+                                                <li data-item="60000007" class="">램프, 전기, LED, 배터리</li>
+                                                <li data-item="60000008" class="">시트, 매트, 방음</li>
+                                                <li data-item="60000009" class="">레저/스포츠</li>
+                                                <li data-item="60000011" class="">충전기, 거치대, 전자기기</li>
+                                                <li data-item="60000318" class="">캠크루</li>
+                                                <li data-item="60000305" class="">출산/육아</li>
+                                                <li data-item="60000320" class="">etc</li>
+                                                <li data-item="60000308" class="">골프</li>
+                                            </ul>
+                                        </li>
+
+                                        <li class="addr">
+                                            <span class="control-label">주소</span>
+                                            <div class="input_box">
+                                                <div class="post readonly">
+                                                    <label>
+                                                        <input type="text" id="potalcode" name="potalcode" readonly="">
+                                                    </label>
+                                                    <a href="javascript:;" class="btn bg-1f1f1f text-white"
+                                                        onclick="postcode()">우편번호 조회</a>
+                                                </div>
+                                                <div id="layer"
+                                                    style="display:none;top:10%;position:fixed;overflow:hidden;z-index:1010;-webkit-overflow-scrolling:touch;">
+                                                    <img src="//t1.daumcdn.net/localimg/localimages/07/postcode/320/close.png"
+                                                        id="btnCloseLayer"
+                                                        style="cursor:pointer;position:absolute;right:-3px;top:-3px;z-index:1">
+                                                </div>
+                                                <label class="addr1 readonly">
+                                                    <input type="text" id="address1" name="address1" readonly="">
+                                                </label>
+                                                <label class="addr2 input_wrap">
+                                                    <input type="text" id="address2" name="address2">
+                                                </label>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <h5 class="yak_title">약관동의</h5>
+                                <div class="form_check agreement">
+                                    <ul>
+                                        <li class="all">
+                                            <div class="check_box">
+                                                <div class="check_box"><input type="checkbox" class="check"
+                                                        id="allCheck"><label for="allCheck">전체 동의</label></div>
+                                            </div>
+                                        </li>
+                                        <li class="ls">
+                                            <div class="check_box">
+                                                <label for="agreeCheck0" class="checkbox_wrap">
+                                                    <input type="checkbox" class="" id="agreeCheck0" name="agreeCheck0">
+                                                    <strong class="c_point text-red">(필수)</strong>
+                                                    <span>서비스 이용약관 동의</span>
+                                                </label>
+                                                <a href="javascript:;" class="bt_view float-right"></a>
+                                                <div class="agree_box">
+                                                    <h3>서비스 이용약관 동의 <a href="javascript:;" class="close"></a></h3>
+                                                    <iframe src="/modules/mbr.agree.useservice.oz"></iframe>
+                                                </div>
+                                                <div class="dimd" style="display:none"></div>
+                                            </div>
+                                        </li>
+                                        <li class="ls">
+                                            <div class="check_box">
+                                                <label for="agreeCheck1" class="checkbox_wrap">
+                                                    <input type="checkbox" class="" id="agreeCheck1" name="agreeCheck1">
+                                                    <strong class="c_point text-red">(필수)</strong>
+                                                    <span>개인정보 수집 및 이용</span>
+                                                </label>
+                                                <a href="javascript:;" class="bt_view float-right"></a>
+                                                <div class="agree_box">
+                                                    <h3>개인정보 수집 및 이용 <a href="javascript:;" class="close"></a></h3>
+                                                    <iframe src="/modules/mbr.agree.privacy.oz"></iframe>
+                                                </div>
+                                                <div class="dimd" style="display:none"></div>
+                                            </div>
+                                        </li>
+                                        <li class="ls">
+                                            <div class="check_box">
+                                                <label for="agreeCheck4" class="checkbox_wrap">
+                                                    <input type="checkbox" class="" id="agreeCheck4" name="agreeCheck4">
+                                                    <strong class="c_point text-red">(필수)</strong>
+                                                    <span>개인정보 제3자 정보제공 동의 </span>
+                                                </label>
+                                                <a href="javascript:;" class="bt_view float-right"></a>
+                                                <div class="agree_box">
+                                                    <h3>개인정보 제3자 정보제공 동의 <a href="javascript:;" class="close"></a></h3>
+                                                    <iframe src="/modules/mbr.agree.privacy.third.oz"></iframe>
+                                                </div>
+                                                <div class="dimd" style="display:none"></div>
+                                            </div>
+                                        </li>
+                                        <li class="ls">
+                                            <div class="check_box">
+                                                <label for="agreeCheck2" class="checkbox_wrap">
+                                                    <input type="checkbox" class="" id="agreeCheck2" name="agreeCheck2">
+                                                    <strong class="c_point text-1f1f1f">(선택)</strong>
+                                                    <span> 이메일 마케팅 수신동의</span>
+                                                </label>
+                                            </div>
+                                        </li>
+                                        <li class="ls">
+                                            <div class="check_box">
+                                                <label for="agreeCheck3" class="checkbox_wrap">
+                                                    <input type="checkbox" class="" id="agreeCheck3" name="agreeCheck3">
+                                                    <strong class="c_point text-1f1f1f">(선택)</strong>
+                                                    <span>SMS 마케팅 수신동의</span>
+                                                </label>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="btn_area">
+                                    <a href="" class="bt_medium bg-cdcdcd text-white max_w" id="btnMbrRegister">회원가입</a>
+                                </div>
+                            </ul>
+                        </div>
+                    </form>
+                </section>
+            </main>
+        </div>
+        <footer>
+
+        </footer>
+    </div>
+</body>
+
+</html>
