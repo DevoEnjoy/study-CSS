@@ -1,14 +1,258 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <!-- <link rel="stylesheet" href="../../src/css/bulma.css"> -->
+    <!-- <link rel="stylesheet" href="../../src/css/normalize3.0kor.css"> -->
+    <!-- <link rel="stylesheet" href="../../src/css/normalize8.0.1.css"> -->
+    <link rel="stylesheet" href="../../src/css/checkbox.css">
+    <link rel="stylesheet" href="../../src/css/common.css">
+    <link rel="stylesheet" href="../../src/font/font.css">
     <link rel="stylesheet" href="../../src/css/layout.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="../../src/css/login.css">
+    <link rel="stylesheet" href="../../src/font/NotoSansKR-Regular.otf">
+    <link rel="stylesheet" href="../../src/font/NotoSansKR-Light.otf">
+    <link rel="stylesheet" href="../../src/css/font.css">
+    <title>불스원몰</title>
 </head>
+
 <body>
-    
-    
+    <main class="bulls_wrapper">
+        <header style="position: fixed; z-index: 100;">
+            <section class="bulls_gnb" style="position: relative;">
+                <h1 class="logo">
+                    <a href="/" title="불스원몰">
+                        <img src="https://www.bullsonemall.com/assets/front/images/common/logo.png" alt="불스원몰">
+                    </a>
+                </h1>
+                <div id="gnb">
+                    <a href="" id="category" style="display: inline-block; min-width: 170px;">
+                        전체 카테고리
+                    </a>
+                </div>
+                <section class="nav_default navDefault"
+                    style="min-width: 750px; min-height: 46px; position: absolute; left: 100%;">
+                    <ul>
+                        <li st>
+                            <a href="/">불스원샷</a>
+                        </li>
+                        <li>
+                            <a href="/">베스트</a>
+                        </li>
+                        <li>
+                            <a href="/">캠크루</a>
+                        </li>
+                        <li class="brand">
+                            <a href="/">브랜드</a>
+                        </li>
+                        <li>
+                            <a href="/">쿠폰</a>
+                        </li>
+                        <li>
+                            <a href="/">이벤트</a>
+                        </li>
+                        <li>
+                            <a href="/">기획전</a>
+                        </li>
+                        <li>
+                            <a href="/">멤버십</a>
+                        </li>
+                        <li>
+                            <a href="/">정기배송</a>
+                        </li>
+                    </ul>
+                </section>
+                <div class="hd_right_menu float-right">
+
+                </div>
+            </section>
+        </header>
+
+        <!-- <header class="bulls_header">
+            <section class="bulls_gnb">
+
+            </section>
+        </header> -->
+
+        <div class="bulls_container" style="padding-top: 80px;">
+            <!-- content start -->
+            <div class="bulls_content">
+
+                <div class="sub" id="mbr_login">
+
+                    <!-- 로그인 -->
+                    <section class="account_layout" id="loginBox">
+                        <header class="sub_header">
+                            <h2 class="title_sub">로그인</h2>
+                        </header>
+                        <div class="tabmenus">
+                            <ul>
+                                <li class="tabmenu tabmenu01 on">
+                                    불스원 회원
+                                </li>
+                                <li class="tabmenu tabmenu02">
+                                    비회원 주문조회
+                                </li>
+                            </ul>
+                        </div>
+                        <form action="" name="login2form" id="login2form" style="display: block;">
+                            <div>
+                                <ul class="form_write">
+                                    <li>
+                                        <label class="input_wrap" for="username">
+                                            <input type="text" class="full-width" placeholder="아이디(이메일)" name="username"
+                                                id="username" value="">
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label class="input_wrap" for="password">
+                                            <input type="password" class="full-width" placeholder="비밀번호(비밀번호)"
+                                                name="password" id="password">
+                                        </label>
+                                    </li>
+                                    <li style="height: auto; margin-bottom: 0;">
+                                        <label class="checkbox_wrap" for="auto">
+                                            <div class="check_box"><input type="checkbox" class="check" id="auto"
+                                                    name="auto"></div>
+                                            <span>아이디 저장</span>
+                                        </label>
+                                    </li>
+                                </ul>
+
+                                <div class="brn_area"
+                                    style="padding: 20px 0 0 0; font-size: 0; line-height: 0; text-align: center; display: inline-block; vertical-align: top; width: 100%;">
+                                    <button id="btnLogin" class="bt_medium bt_pointer full-width">로그인</button>
+                                </div>
+                                <div class="account_menu text-center">
+                                    <ul>
+                                        <li><a href="/modules/mbr.join.oz">회원가입</a></li>
+                                        <li><a href="/modules/mbr.find.id.oz">아이디 찾기</a></li>
+                                        <li><a href="/modules/mbr.find.pwd.oz">비밀번호 찾기</a></li>
+                                    </ul>
+                                </div>
+                                <div class="sns_login">
+                                    <h6>SNS 계정으로 간편 로그인</h6>
+                                    <ul>
+                                        <li>
+                                            <a class="sns_icon sns_kakao"
+                                                href="https://kauth.kakao.com/oauth/authorize?client_id=8ae44a340f7cc411dc3147a2d8500a20&amp;redirect_uri=https%3A%2F%2Fwww.bullsonemall.com%2Fsns%2FRedirect_Kakao2.php&amp;response_type=code">
+                                                <img
+                                                    src="https://www.bullsonemall.com/assets/front/images/common/ic_kakao.svg">
+                                                <p class="text-center">Kakao로 로그인</p>
+                                            </a>
+                                        </li>
+                                        <li style="display:block;">
+                                            <a class="sns_icon sns_naver"
+                                                href="https://nid.naver.com/oauth2.0/authorize?response_type=code&amp;client_id=VeMDr1JnFbupev99aWgq&amp;redirect_uri=https%3A%2F%2Fwww.bullsonemall.com%2Fsns%2FRedirect_Naver2.php&amp;state=RAMDOM_STATE&amp;nav=1&amp;svctype=0">
+                                                <img
+                                                    src="https://www.bullsonemall.com/assets/front/images/common/ic_naver.svg">
+                                                <p class="text-center">NAVER로 로그인</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="sns_icon sns_fb"
+                                                href="https://www.bullsonemall.com/sns/Redirect_Facebook1.php?gubun=default&amp;spath=https%3A%2F%2Fwww.bullsonemall.com">
+                                                <img
+                                                    src="https://www.bullsonemall.com/assets/front/images/common/ic_fb.svg">
+                                                <p class="text-center">Facebook으로 로그인</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:;" id="googleLoginBtn">
+                                                <div class="S9gUrf-YoZ4jf" style="position: relative;">
+                                                    <div>
+                                                        <div tabindex="0" role="button" aria-labelledby="button-label"
+                                                            class="nsm7Bb-HzV7m-LgbsSe  hJDwNd-SxQuSe i5vt6e-Ia7Qfc uaxL4e-RbRzK"
+                                                            style="width:460px; max-width:400px; min-width:min-content;">
+                                                            <div class="nsm7Bb-HzV7m-LgbsSe-MJoBVe"></div>
+                                                            <div class="nsm7Bb-HzV7m-LgbsSe-bN97Pc-sM5MNb oXtfBe-l4eHX">
+                                                                <div class="nsm7Bb-HzV7m-LgbsSe-Bz112c"><svg
+                                                                        version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                                                        viewBox="0 0 48 48" class="LgbsSe-Bz112c">
+                                                                        <g>
+                                                                            <path fill="#EA4335"
+                                                                                d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z">
+                                                                            </path>
+                                                                            <path fill="#4285F4"
+                                                                                d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z">
+                                                                            </path>
+                                                                            <path fill="#FBBC05"
+                                                                                d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z">
+                                                                            </path>
+                                                                            <path fill="#34A853"
+                                                                                d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z">
+                                                                            </path>
+                                                                            <path fill="none" d="M0 0h48v48H0z"></path>
+                                                                        </g>
+                                                                    </svg></div><span
+                                                                    class="nsm7Bb-HzV7m-LgbsSe-BPrWId">Google 계정으로
+                                                                    로그인</span><span class="L6cTce"
+                                                                    id="button-label">Google 계정으로 로그인</span>
+                                                            </div>
+                                                        </div>
+                                                    </div><iframe
+                                                        src="https://accounts.google.com/gsi/button?theme&amp;size=large&amp;width=460&amp;logo_alignment=center&amp;client_id=342891145246-frt3s3lh1nb96kaii6fus3etd81i3gdi.apps.googleusercontent.com&amp;iframe_id=gsi_349690_168696&amp;as=SClus3F2Z2dfZjmThFwzuQ"
+                                                        id="gsi_349690_168696" title="Google 계정으로 로그인 버튼"
+                                                        style="display: block; position: relative; top: 0px; left: 0px; height: 0px; width: 0px; border: 0px;"></iframe>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li style="display:block;">
+                                            <a class="sns_icon sns_apple" href="#"
+                                                onclick="javascript:appleclick(); return false;">
+                                                <img
+                                                    src="https://www.bullsonemall.com/assets/front/images/common/ic_apple.svg">
+                                                <p class="text-center">Apple로 로그인</p>
+                                            </a>
+                                            <div id="appleid-signin" data-color="black" data-border="true"
+                                                data-type="sign in" style="display:none;">
+                                                <div style=" font-synthesis: none; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; width: 100%; height: 100%; min-width: 130px; max-width: 375px; min-height: 30px; max-height: 64px; position: relative; letter-spacing: initial;"
+                                                    role="button" tabindex="0" aria-label="Sign in with Apple">
+                                                    <div
+                                                        style=" padding-right: 8%; padding-left: 8%; position: absolute; box-sizing: border-box; width: 100%; height: 100%;">
+                                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                                            style="pointer-events: none; overflow: visible;"
+                                                            width="100%" height="100%">
+                                                            <g>
+                                                                <svg xmlns="http://www.w3.org/2000/svg"
+                                                                    style="overflow: visible;" width="100%" height="50%"
+                                                                    y="25%" viewBox="0 -11 111.046875 14" fill="#fff">
+                                                                    <text font-size="12px" textLength="111.046875"
+                                                                        font-family="applied-button-font-0"
+                                                                        direction="ltr"> Sign in with Apple</text>
+                                                                </svg>
+                                                            </g>
+                                                        </svg>
+                                                    </div>
+                                                    <div
+                                                        style=" padding: 1px; width: 100%; height: 100%; box-sizing: border-box;">
+                                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                                            style=" overflow: visible;" width="100%" height="100%">
+                                                            <rect width="100%" height="100%" ry="15%" fill="#000"
+                                                                stroke="black" stroke-width="1" stroke-linecap="round">
+                                                            </rect>
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </form>
+                    </section>
+
+                </div>
+            </div>
+        </div>
+    </main>
+    <section></section>
+    <footer></footer>
 </body>
+
 </html>

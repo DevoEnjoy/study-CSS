@@ -9,9 +9,9 @@
         rel="stylesheet"> -->
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="../../src/css/bulma.css">
-    <link rel="stylesheet" href="../../src/css/normalize3.0kor.css">
-    <link rel="stylesheet" href="../../src/css/normalize8.0.1.css">
+    <!-- <link rel="stylesheet" href="../../src/css/bulma.css"> -->
+    <!-- <link rel="stylesheet" href="../../src/css/normalize3.0kor.css"> -->
+    <!-- <link rel="stylesheet" href="../../src/css/normalize8.0.1.css"> -->
     <link rel="stylesheet" href="../../src/css/layout.css">
     <link rel="stylesheet" href="../../src/css/checkbox.css">
     <link rel="stylesheet" href="../../src/css/common.css">
@@ -24,8 +24,8 @@
 
 <body style="font-family: 'NotoSansKR-Regular';">
     <div class="wrapper">
-        <header>
-            <section class="bulls_gnb">
+        <header style="position: fixed; z-index: 100;">
+            <section class="bulls_gnb" style="position: relative;">
                 <h1 class="logo">
                     <a href="/" title="불스원몰">
                         <img src="https://www.bullsonemall.com/assets/front/images/common/logo.png" alt="불스원몰">
@@ -38,10 +38,50 @@
                         </div>
                     </div>
                 </h1>
+                <div id="gnb">
+                    <a href="" id="category" style="display: inline-block; min-width: 170px;">
+                        전체 카테고리
+                    </a>
+                </div>
+                <section class="nav_default navDefault"
+                    style="min-width: 750px; min-height: 46px; position: absolute; left: 100%;">
+                    <ul>
+                        <li>
+                            <a href="https://www.bullsonemall.com/store/index.oz?page=1&amp;cataIdx=60000016">불스원샷</a>
+                        </li>
+                        <li>
+                            <a href="https://www.bullsonemall.com/store/best.oz?page2sort=bullsonebest">베스트</a>
+                        </li>
+                        <li>
+                            <a href="https://www.bullsonemall.com/store/brand.detail.oz?intIdx=199">캠크루</a>
+                        </li>
+                        <li class="brand">
+                            <a href="https://www.bullsonemall.com/store/brand.oz">브랜드</a>
+                        </li>
+                        <li>
+                            <a href="https://www.bullsonemall.com/mystore/coupon.oz">쿠폰</a>
+                        </li>
+                        <li>
+                            <a href="https://www.bullsonemall.com/event/event.oz">이벤트</a>
+                        </li>
+                        <li>
+                            <a href="https://www.bullsonemall.com/store/planning.oz">기획전</a>
+                        </li>
+                        <li>
+                            <a href="https://www.bullsonemall.com/mystore/benefit.oz">멤버십</a>
+                        </li>
+                        <li>
+                            <a href="https://www.bullsonemall.com/store/regular.oz">정기배송</a>
+                        </li>
+                    </ul>
+                </section>
+                <div class="hd_right_menu float-right">
+
+                </div>
             </section>
         </header>
         <div>
-            <main class="sub register" style="padding: 50px 0 100px;">
+            <main class="sub register" style="padding: 130px 0 100px;">
                 <!-- 회원가입 -->
                 <section class="account_layout" id="joinBox">
                     <header class="sub_header">
@@ -116,13 +156,10 @@
                                             <span>아이디(이메일)<strong class="text-red">*</strong></span>
                                             <label for="checkEmail" class="input_wrap">
                                                 <input type="email" title="" placeholder="아이디를 입력해주세요"
-                                                    class="type_text max_w {validate:{required:true, email:true}}"
-                                                    id="checkEmail" name="email" value=""
-                                                    data-gtm-form-interact-field-id="0">
+                                                    class="type_text max_w" id="checkEmail" name="email">
                                                 <em class="chk chk_red">
                                                     <svg width="13.508" height="12.1" viewBox="0 0 13.508 12.1">
-                                                        <path d="M-7724.685-21453.953l4.993,4.746,7.007-10"
-                                                            transform="translate(7725.374 21459.781)" fill="none"
+                                                        <path d="M-7724.685-21453.953l4.993,4.746,7.007-10" transform="translate(7725.374 21459.781)" fill="none"
                                                             stroke-width="2"></path>
                                                     </svg>
                                                 </em>

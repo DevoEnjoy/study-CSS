@@ -2390,3 +2390,13 @@
   }
 
 .dimd{position:fixed;top:0;left:0;width:100%;height:100%;background-color:#111;opacity:.7;z-index:99}
+
+#mbr_login .account_content .form_write li {
+  height: 56px;
+  margin-bottom: 10px;
+}
+
+.account_content .checkbox_wrap span {
+  vertical-align: top;
+  margin-top: 2px;
+}
