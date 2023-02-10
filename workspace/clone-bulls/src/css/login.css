@@ -1,0 +1,47 @@
+
+
+
+
+.bulls_content{
+    position: relative;
+}
+
+.bulls_container {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    list-style: none;
+    text-decoration: none;
+    line-height: 1.4;
+    font-family: 'notokr-demilight';
+}
+
+.bulls_container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 80px;
+    min-height: 80vh;
+}
+
+ul.form_write li {
+    height: 56px;
+    margin-bottom: 10px;
+}
+
+label.checkbox_wrap span {
+    vertical-align: top;
+    margin-top: 2px;
+}
+
+.btn_area {
+    padding: 20px 0 0 0;
+    font-size: 0;
+    line-height: 0;
+    text-align: center;
+    display: inline-block;
+    vertical-align: top;
+    width: 100%;
+}
